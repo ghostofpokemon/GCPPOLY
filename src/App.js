@@ -1,7 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import BgImg from './img-1.jpg';
-import {useCallback, useState} from 'react';
+import {useState} from 'react';
 import Button from '@material-ui/core/Button';
 import GCPPOLYabi from './GCPPOLYabi.json';
 import Web3 from 'web3';
@@ -112,13 +112,11 @@ function App() {
   const [web3, setWeb3] = useState('');
   const [instance, setInstance] = useState('');
   const [account, setAccount] = useState('a');
-  const [message, setMessage] = useState('I ❤️ 😺');
   const [netId, setNetId] = useState('');
   const [balance, setBalance] = useState('0');
   const [playerBalance, setPlayerBalance] = useState('0');
   const [countdown, setCountdown] = useState(false);
   const [betAmount, setBet] = useState('.01');
-  const [internalValue, setInternalValue] = useState(betAmount);
   const [isDisabled, setDisabled] = useState(true);
 
   const clickfirst = async () => {
